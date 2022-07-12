@@ -8,7 +8,7 @@ def Nh(gazo, kakudairitu, kaitenn): # NearestHokann
     kakudairitu = (float(kakudairitu[0]), float(kakudairitu[1]))
 
     if kaitenn == 0:
-        #これはグレースケールかカラー画像かの場合分け
+        #ここはグレースケールかカラー画像かの場合分け
         if gazo.shape[2] == None:
             size_store = (round(gazo.shape[0] * kakudairitu[0]), round(gazo.shape[1] * kakudairitu[1]))
         else:
